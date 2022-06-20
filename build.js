@@ -2,7 +2,7 @@ const { pnpPlugin } = require('@yarnpkg/esbuild-plugin-pnp');
 
 require('esbuild')
   .build({
-    entryPoints: ['public/index.html'],
+    entryPoints: ['./src/index.tsx'],
     bundle: true,
     outfile: 'out.js',
     plugins: [pnpPlugin()],
